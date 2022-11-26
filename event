@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<script>
+		function hello(surprise) {
+			surprise.style.backgroundColor = "green";
+			alert("Hello World");
+		}
+		function funky(x){
+			x.style.backgroundColor = "green";
+			}
+		function bye(){
+			alert("Goodbye");
+			}
+		function how(){
+			var sa=prompt("Who are you ?")
+			alert("Hello " + sa);
+		}
+		function greenButton(thing){
+			thing.style.backgroundColor = "green";
+			}
+			
+		
+		
+	</script>
+</head>
+<body>
+	<img src="C:/Users/ma852/Desktop/walk.jpg" onmouseout="this.src='C:/Users/ma852/Desktop/bus.jpg'" onmouseover="this.src='C:/Users/ma852/Desktop/palaceDay.jpg'"/>
+	<p><button id = "btnHello" onclick="hello(this)">Say Hello</button>
+	<button id = "btnColourChange" onmouseout="funky(this)">Colour Changer</button></p>
+	<button id="btnBye" onclick="bye()">GoodBye</button>
+	<button onclick="how()">sayHello</button>
+	<button onclick="greenButton(this)">green button</button>
+	<button onclick="hello(btnHello)">Surprise</button>
+	
+</body>
+</html>
